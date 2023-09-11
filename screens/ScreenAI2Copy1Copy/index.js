@@ -9,7 +9,7 @@ const WelcomeScreen = () => {
         
       <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><TextInput style={styles.iTixcXPe}></TextInput></View>
       
-    <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><Text style={styles.Usavnfxt}>{"Atriu.net Copyright 2023"}</Text><View><TouchableOpacity></TouchableOpacity></View><View style={styles.MgxDGQNS}><TouchableOpacity><Text style={styles.didQjPNm}>{"Relay"}</Text></TouchableOpacity></View></SafeAreaView>;
+    <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><Text style={styles.Usavnfxt}>{"Atriu.net Copyright 2023"}</Text><View><TouchableOpacity></TouchableOpacity></View><View style={styles.MgxDGQNS}><TouchableOpacity><Text style={styles.didQjPNm}>{"Relay"}</Text></TouchableOpacity></View><TextInput style={styles.MaczZpgY}></TextInput></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -72,8 +72,8 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     backgroundColor: "#6398de",
     position: "absolute",
-    top: 13,
-    left: 269
+    top: 16,
+    left: 260
   },
   didQjPNm: {
     width: 41,
@@ -89,8 +89,16 @@ const styles = StyleSheet.create({
     left: 16,
     width: 324,
     height: 238,
-    backgroundColor: "#353333",
+    backgroundColor: "#2a2a2a",
     color: "#e3e3e3"
+  },
+  MaczZpgY: {
+    position: "absolute",
+    top: 326,
+    left: 15,
+    width: 328,
+    height: 278,
+    backgroundColor: "#222222"
   }
 });
 export default WelcomeScreen;
