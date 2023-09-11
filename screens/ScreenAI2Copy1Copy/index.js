@@ -1,3 +1,4 @@
+import { TextInput } from "react-native";
 import React from 'react';
 import { SafeAreaView, StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
@@ -6,7 +7,7 @@ const WelcomeScreen = () => {
       <View style={styles.header}>
         <Image style={styles.logo} source={require("./D6xXnNxNgpPEoaqxdkk3--8--dfh9i.jpg")} />
         
-      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View></View>
+      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><TextInput style={styles.iTixcXPe}></TextInput></View>
       
     <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><Text style={styles.Usavnfxt}>{"Atriu.net Copyright 2023"}</Text><View><TouchableOpacity></TouchableOpacity></View><View style={styles.MgxDGQNS}><TouchableOpacity><Text style={styles.didQjPNm}>{"Relay"}</Text></TouchableOpacity></View></SafeAreaView>;
 };
@@ -81,6 +82,15 @@ const styles = StyleSheet.create({
     top: 13,
     left: 23,
     color: "#ffffff"
+  },
+  iTixcXPe: {
+    position: "absolute",
+    top: 78,
+    left: 16,
+    width: 324,
+    height: 238,
+    backgroundColor: "#353333",
+    color: "#e3e3e3"
   }
 });
 export default WelcomeScreen;
