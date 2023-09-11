@@ -16,7 +16,7 @@ const WelcomeScreen = () => {
         navigation.navigate("ScreenAI2Copy1CopyCopy");
       }}></TouchableOpacity><Pressable onPress={() => {
         navigation.navigate("ScreenAI2Copy1CopyCopy");
-      }}><Text style={styles.kTyuUyja}>{"Relay"}</Text></Pressable></View><TextInput style={styles.MaczZpgY}></TextInput></SafeAreaView>;
+      }}><Text style={styles.kTyuUyja}>{"Relay"}</Text></Pressable></View><TextInput style={styles.MaczZpgY}></TextInput><Image style={styles.PYAZRWgz}></Image><Image></Image></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -32,12 +32,12 @@ const styles = StyleSheet.create({
     height: 610
   },
   logo: {
-    width: 50,
-    height: 52,
+    width: 63,
+    height: 61,
     borderRadius: 75,
     position: "absolute",
-    left: 14,
-    top: 9
+    left: 12,
+    top: 8
   },
   FOmJhcJU: {
     height: 628,
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   },
   Usavnfxt: {
     width: 356,
-    height: 26,
+    height: 25,
     textAlign: "center"
   },
   MgxDGQNS: {
@@ -86,8 +86,8 @@ const styles = StyleSheet.create({
   },
   MaczZpgY: {
     position: "absolute",
-    top: 69,
-    left: 16,
+    top: 70,
+    left: 17,
     width: 328,
     height: 540,
     backgroundColor: "#222222"
@@ -123,6 +123,10 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 15,
     left: 24
+  },
+  PYAZRWgz: {
+    width: 356,
+    height: 0
   }
 });
 export default WelcomeScreen;
