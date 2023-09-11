@@ -21,7 +21,7 @@ const WelcomeScreen = () => {
       <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><TextInput style={styles.kyZbrGPb} data={Logins}></TextInput></View>
       <View style={styles.footer}>
         <TouchableOpacity style={styles.loginButton} onPress={() => {
-        navigation.navigate("ScreenAI2Copy1");
+        navigation.navigate("MainLoginCopy", {});
       }}>
           <Text style={styles.loginText}>Login</Text>
         </TouchableOpacity>

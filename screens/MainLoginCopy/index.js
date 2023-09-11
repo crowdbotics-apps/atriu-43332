@@ -6,22 +6,24 @@ import { SafeAreaView, StyleSheet, View, Text, Image, TouchableOpacity } from 'r
 
 const WelcomeScreen = () => {
   const {
-    entities: Signups
-  } = useSelector(state => state.Signups);
+    entities: Passwords
+  } = useSelector(state => state.Passwords);
   const navigation = useNavigation();
-  return <SafeAreaView style={styles.container}>
+  return <SafeAreaView style={styles.container} onPress={() => {
+    navigation.navigate("ScreenAI2CopyCopy");
+  }}>
       <View style={styles.header}>
         <Image style={styles.logo} source={require("./D6xXnNxNgpPEoaqxdkk3--8--dfh9i.jpg")} />
         
-      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><TextInput style={styles.kyZbrGPb} data={Signups}></TextInput></View>
+      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View></View>
       <View style={styles.footer}>
         <TouchableOpacity style={styles.loginButton} onPress={() => {
-        navigation.navigate("MainLoginCopy", {});
+        navigation.navigate("ScreenAI2Copy1");
       }}>
-          <Text style={styles.loginText}>Login</Text>
+          <Text style={styles.loginText}>{"Continue to Atriu"}</Text>
         </TouchableOpacity>
       </View>
-    <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><TextInput style={styles.zPnXAOva} data={Signups}></TextInput><Text style={styles.CYOnXYQR}>{"Atriu.net Copyright 2023"}</Text><Text style={styles.AZIgawIW}>{"Password"}</Text><Text style={styles.LzpQyiVZ}>{"Email"}</Text><TextInput style={styles.qliKQRGr} data={Signups}></TextInput><Text style={styles.WzPGuFHM}>{"Username"}</Text></SafeAreaView>;
+    <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><TextInput style={styles.zPnXAOva} data={Passwords}></TextInput><Text style={styles.CYOnXYQR}>{"Atriu.net Copyright 2023"}</Text><Text style={styles.AZIgawIW}>{"Token\n"}</Text></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -91,20 +93,14 @@ const styles = StyleSheet.create({
   RueOYfmX: {
     backgroundColor: "#68A3ED"
   },
-  kyZbrGPb: {
-    backgroundColor: "#ffffff",
-    borderColor: "#cccccc",
-    width: 150,
-    height: 21
-  },
   zPnXAOva: {
     position: "absolute",
     backgroundColor: "#ffffff",
     borderColor: "#cccccc",
     width: 151,
     height: 21,
-    top: 200,
-    left: 103
+    top: 386,
+    left: 102
   },
   CYOnXYQR: {
     width: 356,
@@ -113,33 +109,10 @@ const styles = StyleSheet.create({
   },
   AZIgawIW: {
     position: "absolute",
-    top: 178,
-    left: 103,
+    top: 355,
+    left: 156,
     width: 171,
     height: 20,
-    color: "#b9b9b9"
-  },
-  LzpQyiVZ: {
-    position: "absolute",
-    top: 120,
-    left: 103,
-    color: "#b9b9b9"
-  },
-  qliKQRGr: {
-    position: "absolute",
-    top: 86,
-    backgroundColor: "#ffffff",
-    left: 103,
-    width: 151,
-    height: 21
-  },
-  WzPGuFHM: {
-    textAlign: "left",
-    width: 356,
-    height: 35,
-    position: "absolute",
-    top: 63,
-    left: 103,
     color: "#b9b9b9"
   }
 });
