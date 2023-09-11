@@ -1,9 +1,12 @@
+import { useNavigation } from "@react-navigation/native";
+import { Pressable } from "react-native";
 import { useSelector } from "react-redux";
 import { TextInput } from "react-native";
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
+import { SafeAreaView, StyleSheet, View, Text, Image } from 'react-native';
 
 const WelcomeScreen = () => {
+  const navigation = useNavigation();
   const {
     entities: AuthTokens
   } = useSelector(state => state.AuthTokens);
@@ -11,9 +14,11 @@ const WelcomeScreen = () => {
       <View style={styles.header}>
         <Image style={styles.logo} source={require("./D6xXnNxNgpPEoaqxdkk3--8--dfh9i.jpg")} />
         
-      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><TextInput style={styles.mUjrqZuk} data={AuthTokens}></TextInput></View>
+      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><TextInput style={styles.mUjrqZuk} data={AuthTokens}></TextInput><View style={styles.mraGdPFe}></View></View>
       
-    <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><Text style={styles.Usavnfxt}>{"Atriu.net Copyright 2023"}</Text><View><TouchableOpacity></TouchableOpacity></View><View style={styles.MgxDGQNS}><TouchableOpacity><Text style={styles.didQjPNm}>{"Continue to Atriu"}</Text></TouchableOpacity></View></SafeAreaView>;
+    <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><Text style={styles.Usavnfxt}>{"Atriu.net Copyright 2023"}</Text><Pressable onPress={() => {
+      navigation.navigate("ScreenAI2Copy1Copy");
+    }}><Text style={styles.XpJAakTY}>{"Continue to Atriu"}</Text></Pressable><Text style={styles.UQRbaCdT}>{"Token"}</Text></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -66,31 +71,38 @@ const styles = StyleSheet.create({
     backgroundColor: "#68A3ED"
   },
   Usavnfxt: {
-    width: 340,
+    width: 356,
     height: 26,
     textAlign: "center"
-  },
-  MgxDGQNS: {
-    width: 206,
-    height: 51,
-    borderRadius: 40,
-    backgroundColor: "#6398de",
-    position: "absolute",
-    top: 324,
-    left: 78
-  },
-  didQjPNm: {
-    width: 112,
-    height: 19,
-    position: "absolute",
-    top: 15,
-    left: 50
   },
   mUjrqZuk: {
     backgroundColor: "#ffffff",
     borderColor: "#cccccc",
     width: 150,
     height: 30
+  },
+  mraGdPFe: {
+    height: 36,
+    width: 156,
+    backgroundColor: "#518ccb",
+    borderRadius: 4,
+    color: "#777777",
+    position: "absolute",
+    top: 327,
+    left: 101
+  },
+  XpJAakTY: {
+    textAlign: "center",
+    position: "absolute",
+    top: -301,
+    left: 126
+  },
+  UQRbaCdT: {
+    textAlign: "center",
+    position: "absolute",
+    top: 261,
+    left: 157,
+    color: "#e3e3e3"
   }
 });
 export default WelcomeScreen;

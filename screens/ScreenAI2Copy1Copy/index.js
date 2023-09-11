@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
     height: 52,
     borderRadius: 75,
     position: "absolute",
-    left: 9,
-    top: 1
+    left: 14,
+    top: 9
   },
   FOmJhcJU: {
     height: 628,
@@ -66,20 +66,20 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   MgxDGQNS: {
-    width: 89,
-    height: 51,
-    borderRadius: 0,
+    width: 79,
+    height: 47,
+    borderRadius: 4,
     backgroundColor: "#6398de",
     position: "absolute",
-    top: 324,
-    left: 144
+    top: 13,
+    left: 269
   },
   didQjPNm: {
     width: 41,
     height: 19,
     position: "absolute",
-    top: 14,
-    left: 28,
+    top: 13,
+    left: 23,
     color: "#ffffff"
   }
 });
