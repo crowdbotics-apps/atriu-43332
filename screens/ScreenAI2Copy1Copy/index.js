@@ -8,7 +8,9 @@ const WelcomeScreen = () => {
   const navigation = useNavigation();
   return <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Image style={styles.logo} source={require("./D6xXnNxNgpPEoaqxdkk3--8--dfh9i.jpg")} />
+        <Pressable onPress={() => {
+        navigation.navigate("ScreenAI2Copy1CopyCopyCopy");
+      }}><Image style={styles.logo} source={require("./D6xXnNxNgpPEoaqxdkk3--8--dfh9i.jpg")} /></Pressable>
         
       <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><Text style={styles.nrGriiVq}>{"ID"}</Text><Text style={styles.owZIhOdk}>{"Username"}</Text></View>
       
@@ -36,8 +38,8 @@ const styles = StyleSheet.create({
     height: 61,
     borderRadius: 75,
     position: "absolute",
-    left: 12,
-    top: 8
+    left: -169,
+    top: -301
   },
   FOmJhcJU: {
     height: 628,
@@ -86,8 +88,8 @@ const styles = StyleSheet.create({
   },
   MaczZpgY: {
     position: "absolute",
-    top: 70,
-    left: 17,
+    top: 68,
+    left: 13,
     width: 328,
     height: 540,
     backgroundColor: "#222222"
