@@ -1,15 +1,19 @@
+import { useNavigation } from "@react-navigation/native";
 import { TextInput } from "react-native";
 import React from 'react';
 import { SafeAreaView, StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
 const WelcomeScreen = () => {
+  const navigation = useNavigation();
   return <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Image style={styles.logo} source={require("./D6xXnNxNgpPEoaqxdkk3--8--dfh9i.jpg")} />
         
-      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><TextInput style={styles.iTixcXPe}></TextInput><View style={styles.PfaTYEyu}></View></View>
+      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><TextInput style={styles.iTixcXPe} maxLength={384} multiline={true}></TextInput><View style={styles.PfaTYEyu}><Text style={styles.uabCJpyi}>{"Add Text"}</Text></View></View>
       
-    <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><Text style={styles.Usavnfxt}>{"Atriu.net Copyright 2023"}</Text><View><TouchableOpacity></TouchableOpacity></View><View style={styles.MgxDGQNS}><TouchableOpacity><Text style={styles.didQjPNm}>{"Relay Message"}</Text></TouchableOpacity></View><View><TouchableOpacity></TouchableOpacity></View></SafeAreaView>;
+    <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><Text style={styles.Usavnfxt}>{"Atriu.net Copyright 2023"}</Text><View><TouchableOpacity></TouchableOpacity></View><View style={styles.MgxDGQNS}><TouchableOpacity onPress={() => {
+        navigation.navigate("ScreenAI2Copy1Copy");
+      }}><Text style={styles.didQjPNm}>{"Relay Message"}</Text></TouchableOpacity></View><View><TouchableOpacity></TouchableOpacity></View></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -73,7 +77,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#6398de",
     position: "absolute",
     top: 338,
-    left: 17
+    left: 18
   },
   didQjPNm: {
     width: 100,
@@ -101,7 +105,20 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 397,
     left: 194,
-    borderWidth: 4
+    borderWidth: 4,
+    borderColor: "#191919"
+  },
+  uabCJpyi: {
+    width: 83,
+    height: 22,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    textAlign: "center",
+    position: "absolute",
+    top: 13,
+    left: 25,
+    color: "#ffffff"
   }
 });
 export default WelcomeScreen;

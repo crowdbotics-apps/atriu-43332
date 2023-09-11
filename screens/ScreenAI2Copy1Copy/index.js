@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { TextInput } from "react-native";
 import React from 'react';
@@ -9,11 +10,13 @@ const WelcomeScreen = () => {
       <View style={styles.header}>
         <Image style={styles.logo} source={require("./D6xXnNxNgpPEoaqxdkk3--8--dfh9i.jpg")} />
         
-      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View></View>
+      <View style={styles.FOmJhcJU}></View><View style={styles.MNAXvICC}></View><Text style={styles.nrGriiVq}>{"ID"}</Text><Text style={styles.owZIhOdk}>{"Username"}</Text></View>
       
     <View></View><View></View><View></View><View></View><View style={styles.pcZqJmxb}></View><View></View><View style={styles.RueOYfmX}></View><Text style={styles.Usavnfxt}>{"Atriu.net Copyright 2023"}</Text><View><TouchableOpacity></TouchableOpacity></View><View style={styles.MgxDGQNS}><TouchableOpacity onPress={() => {
         navigation.navigate("ScreenAI2Copy1CopyCopy");
-      }}><Text style={styles.didQjPNm}>{"Relay"}</Text></TouchableOpacity></View><TextInput style={styles.MaczZpgY}></TextInput></SafeAreaView>;
+      }}></TouchableOpacity><Pressable onPress={() => {
+        navigation.navigate("ScreenAI2Copy1CopyCopy");
+      }}><Text style={styles.kTyuUyja}>{"Relay"}</Text></Pressable></View><TextInput style={styles.MaczZpgY}></TextInput></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -24,7 +27,9 @@ const styles = StyleSheet.create({
   header: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    width: 356,
+    height: 610
   },
   logo: {
     width: 50,
@@ -66,7 +71,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#68A3ED"
   },
   Usavnfxt: {
-    width: 340,
+    width: 356,
     height: 26,
     textAlign: "center"
   },
@@ -76,24 +81,48 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     backgroundColor: "#6398de",
     position: "absolute",
-    top: 16,
-    left: 260
-  },
-  didQjPNm: {
-    width: 41,
-    height: 19,
-    position: "absolute",
-    top: 13,
-    left: 23,
-    color: "#ffffff"
+    top: 14,
+    left: 259
   },
   MaczZpgY: {
     position: "absolute",
-    top: 74,
-    left: 15,
+    top: 69,
+    left: 16,
     width: 328,
-    height: 530,
+    height: 540,
     backgroundColor: "#222222"
+  },
+  nrGriiVq: {
+    width: 100,
+    height: 21,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    position: "absolute",
+    top: 34,
+    left: 102
+  },
+  owZIhOdk: {
+    width: 100,
+    height: 20,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    position: "absolute",
+    top: 10,
+    textAlign: "left",
+    left: 103
+  },
+  kTyuUyja: {
+    width: 100,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    color: "#ffffff",
+    position: "absolute",
+    top: 15,
+    left: 24
   }
 });
 export default WelcomeScreen;
